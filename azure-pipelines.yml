@@ -23,7 +23,9 @@ steps:
 
 - task: NuGetCommand@2
   inputs:
-    restoreSolution: '$(solution)'
+      command: 'restore'
+      restoreSolution: '$(solution)'
+      feedsToUse: 'select'
 
 - task: MSBuild@1
   displayName: 'Build solution **/*.publishproj'
