@@ -12,7 +12,7 @@ pool:
 variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
-  solution: '**/*.csproj'
+  solution: '**/*.publishproj'
   #project: '**/*.csproj'
 
 steps:
